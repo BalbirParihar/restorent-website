@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.3em;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+  position: sticky;
+  top: 0;
+  padding: 8px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar_icon {
+    font-size: 32px;
+}
+
+/* hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero_content {
+    padding: 50px;
+}
+ span {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.hero_content h1 {
+    text-transform: capitalize;
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+
+.hero_content button {
+    margin-top: 20px;
+    background-color: #ffc066;
+    border: none;
+    padding: 10px;
+}
+
+/* features section */
+.features {
+    display: flex;
+    gap: 10px;
+    margin-block: 80px;
+    justify-content: center;
+}
+.feature {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.feature:hover{
+    
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+
+.feature img{
+    width: 72px;
+}
+.feature_content{
+    line-height: 1.5;
+}
+.feature_content h3{
+    font-style: 32px;
+}
+.divider{
+    border: 1px solid #ccc;
+    margin-block: 20px;
+}
+
+/* Menu Section */
+.menu_text{
+    text-align: center;
+    margin-block: 50px;
+}
+.menu_text h2{
+    font-family: "Roboto",sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+margin-block: 30px;
+}
+
+.food_grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+   " I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7"
+    ;
+}
+.food_item1{
+    grid-area: I1;
+}
+.food_item2{
+    grid-area: I2;
+}
+.food_item13{
+    grid-area: I3;
+}
+.food_item4{
+    grid-area: I4;
+}
+.food_item5{
+    grid-area: I5;
+}
+.food_item6{
+    grid-area: I6;
+}
+.food_item7{
+    grid-area: I7;
+}
+
+.food_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+footer{
+        background-color: #fff0db;
+        margin-top: 50px;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    line-height: 1.8;
+}
+footer h3{
+    color: #808080;
+    font-size: 20px;
+}
+footer ul{
+    list-style-type: none;
+
+}
+footer input{
+    padding: 10px 20px;
+
+}
+
+.icon_container{
+    display: flex;
+    gap: 20px;
+}
+.icon{
+    font-size: 32px ;
+}
